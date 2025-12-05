@@ -1,0 +1,43 @@
+/* =======================
+   Font Face Declarations
+   ======================= */
+
+@font-face {
+  font-family: 'Biondeggiare';
+  src: url('/fonts/Biondeggiare-Regular.woff2') format('woff2'),
+    url('/fonts/Biondeggiare-Regular.woff') format('woff'),
+    url('/fonts/Biondeggiare-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =======================
+   CSS Reset & Base Styles
+   ======================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Light mode colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --text-tertiary: #adb5bd;
+  --accent-primary: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --border-color: #dee2e6;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --code-bg: #f6f8fa;
+  --code-border: #e1e4e8;
+}

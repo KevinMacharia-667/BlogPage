@@ -1,0 +1,150 @@
+---
+title: "Building a Modern Blog with MDX"
+date: "2024-03-05"
+excerpt: "Learn how to create a powerful blog using MDX, combining the simplicity of Markdown with the power of React components."
+author: "Blog Author"
+tags: ["MDX", "Content", "Blogging"]
+---
+
+# Building a Modern Blog with MDX
+
+MDX is a fantastic format that combines the simplicity of Markdown with the power of JSX. It's perfect for creating rich, interactive blog content.
+
+## What is MDX?
+
+MDX allows you to use JSX in your Markdown documents. This means you can:
+
+- Write content in Markdown
+- Import and use React components
+- Create interactive examples
+- Build reusable content blocks
+
+## Basic MDX Syntax
+
+MDX supports all standard Markdown syntax:
+
+### Headings
+
+Use `#` for headings (shown above)
+
+### Lists
+
+**Unordered lists:**
+- First item
+- Second item
+- Third item
+
+**Ordered lists:**
+1. Step one
+2. Step two
+3. Step three
+
+### Code Blocks
+
+Inline code like `const greeting = "Hello"` is easy to add.
+
+Block code with syntax highlighting:
+
+```javascript
+function greet(name) {
+  console.log(`Hello, ${name}!`)
+  return `Welcome to MDX`
+}
+
+greet('Developer')
+```
+
+### Blockquotes
+
+> "MDX is the perfect blend of content and code."
+> - A happy developer
+
+## Using React Components in MDX
+
+The real power of MDX comes from embedding React components:
+
+```mdx
+import { CustomComponent } from './components'
+
+# My Post
+
+Here's some regular Markdown content.
+
+<CustomComponent prop="value" />
+
+And more Markdown after the component!
+```
+
+## Styling MDX Content
+
+You can customize how MDX elements render by providing custom components:
+
+```tsx
+const components = {
+  h1: ({ children }) => (
+    <h1 className="custom-heading">{children}</h1>
+  ),
+  code: ({ children }) => (
+    <code className="custom-code">{children}</code>
+  )
+}
+
+<MDXRemote source={content} components={components} />
+```
+
+## Processing MDX in Next.js
+
+Here's how to set up MDX processing:
+
+```tsx
+import { MDXRemote } from 'next-mdx-remote/rsc'
+import rehypeHighlight from 'rehype-highlight'
+
+export default function BlogPost({ content }) {
+  return (
+    <MDXRemote
+      source={content}
+      options={{
+        mdxOptions: {
+          rehypePlugins: [rehypeHighlight]
+        }
+      }}
+    />
+  )
+}
+```
+
+## Frontmatter for Metadata
+
+Add metadata to your MDX files using frontmatter:
+
+```yaml
+---
+title: "My Awesome Post"
+date: "2024-03-05"
+author: "Developer"
+tags: ["MDX", "React"]
+---
+```
+
+Parse it with gray-matter:
+
+```typescript
+import matter from 'gray-matter'
+
+const { data, content } = matter(fileContent)
+console.log(data.title) // "My Awesome Post"
+```
+
+## Benefits of Using MDX
+
+1. **Content and Code Together** - Write documentation with live examples
+2. **Type Safety** - Use TypeScript with your content
+3. **Component Reuse** - Share components across posts
+4. **Rich Formatting** - Combine Markdown simplicity with React power
+
+## Conclusion
+
+MDX bridges the gap between content and code, making it ideal for technical blogs, documentation, and interactive articles. Start using MDX in your next project and experience the difference!
+
+Happy writing! ✨
