@@ -26,13 +26,16 @@ export function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        My Blog
+                        Kevin's Blog
                     </motion.span>
                 </Link>
 
                 <div className="navbar-links">
                     <Link href="/" className="nav-link">
                         Home
+                    </Link>
+                    <Link href="/fonts" className="nav-link">
+                        Fonts
                     </Link>
                     <Link href="/about" className="nav-link">
                         About

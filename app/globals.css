@@ -1,4 +1,4 @@
-/* =======================
+﻿/* =======================
    Font Face Declarations
    ======================= */
 
@@ -41,33 +41,7 @@
   --code-bg: #f6f8fa;
   --code-border: #e1e4e8;
 }
-
-.dark {
-  /* Dark mode colors */
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-tertiary: #334155;
-  --text-primary: #f1f5f9;
-  --text-secondary: #cbd5e1;
-  --text-tertiary: #64748b;
-  --accent-primary: #818cf8;
-  --accent-secondary: #a78bfa;
-  --accent-gradient: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
-  --border-color: #334155;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
-  --code-bg: #1e293b;
-  --code-border: #334155;
-}
-
-/* =======================
-   Navigation
-   ======================= */
-
-
-.navbar {
+  .navbar {
     position: sticky;
     top: 0;
     z-index: 50;
@@ -75,20 +49,18 @@
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     transition: all 0.3s ease;
-}
+  }
 
-.navbar-container {
+  .navbar-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.navbar-logo {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .navbar-logo {
     font-size: 1.5rem;
     font-weight: 700;
     background: var(--accent-gradient);
@@ -97,31 +69,31 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     background-clip: text;
     text-decoration: none;
     transition: opacity 0.2s ease;
-}
+  }
 
-.navbar-logo:hover {
+  .navbar-logo:hover {
     opacity: 0.8;
-}
+  }
 
-.navbar-links {
+  .navbar-links {
     display: flex;
     align-items: center;
     gap: 2rem;
-}
+  }
 
-.nav-link {
+  .nav-link {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
     position: relative;
     transition: color 0.2s ease;
-}
+  }
 
-.nav-link:hover {
+  .nav-link:hover {
     color: var(--accent-primary);
-}
+  }
 
-.nav-link::after {
+  .nav-link::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -130,13 +102,13 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     height: 2px;
     background: var(--accent-gradient);
     transition: width 0.3s ease;
-}
+  }
 
-.nav-link:hover::after {
+  .nav-link:hover::after {
     width: 100%;
-}
+  }
 
-.theme-toggle {
+  .theme-toggle {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 50%;
@@ -148,25 +120,25 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     cursor: pointer;
     color: var(--text-primary);
     transition: all 0.2s ease;
-}
+  }
 
-.theme-toggle:hover {
+  .theme-toggle:hover {
     background: var(--bg-tertiary);
     box-shadow: var(--shadow-md);
-}
+  }
 
-/* =======================
+  /* =======================
    Footer
    ======================= */
 
-.footer {
+  .footer {
     background: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
     padding: 2rem 1.5rem;
     margin-top: 4rem;
-}
+  }
 
-.footer-container {
+  .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -174,41 +146,39 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-}
+  }
 
-.footer-text {
+  .footer-text {
     color: var(--text-secondary);
     font-size: 0.875rem;
-}
+  }
 
-.footer-links {
+  .footer-links {
     display: flex;
     gap: 1.5rem;
-}
+  }
 
-.footer-link {
+  .footer-link {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.875rem;
     transition: color 0.2s ease;
-}
+  }
 
-.footer-link:hover {
+  .footer-link:hover {
     color: var(--accent-primary);
-}
+  }
 
-/* =======================
+  /* =======================
    Hero Section
    ======================= */
 
-.hero {
+  .hero {
     text-align: center;
     padding: 4rem 0 3rem;
-}
+  }
 
-.hero-title {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .hero-title {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
@@ -217,27 +187,27 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1.2;
-}
+  }
 
-.hero-subtitle {
+  .hero-subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
-}
+  }
 
-/* =======================
+  /* =======================
    Post Grid
    ======================= */
 
-.posts-grid {
+  .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
-}
+  }
 
-.post-card {
+  .post-card {
     display: block;
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
@@ -246,69 +216,65 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-sm);
-}
+  }
 
-.post-card:hover {
+  .post-card:hover {
     box-shadow: var(--shadow-lg);
     border-color: var(--accent-primary);
     transform: translateY(-4px);
-}
+  }
 
-.post-card-content {
+  .post-card-content {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-}
+  }
 
-.post-card-title {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .post-card-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-primary);
     line-height: 1.3;
-}
+  }
 
-.post-card-date {
+  .post-card-date {
     font-size: 0.875rem;
     color: var(--text-tertiary);
-}
+  }
 
-.post-card-excerpt {
+  .post-card-excerpt {
     color: var(--text-secondary);
     line-height: 1.6;
-}
+  }
 
-.post-card-tags {
+  .post-card-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 0.5rem;
-}
+  }
 
-.tag {
+  .tag {
     background: var(--accent-gradient);
     color: white;
     font-size: 0.75rem;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-weight: 500;
-}
+  }
 
-/* =======================
+  /* =======================
    Blog Post Page
    ======================= */
 
-.post-header {
+  .post-header {
     text-align: center;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border-color);
-}
+  }
 
-.post-title {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .post-title {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 1rem;
@@ -317,85 +283,79 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1.2;
-}
+  }
 
-.post-meta {
+  .post-meta {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     color: var(--text-secondary);
     font-size: 0.875rem;
-}
+  }
 
-.post-content {
+  .post-content {
     max-width: 800px;
     margin: 0 auto;
-}
+  }
 
-/* =======================
+  /* =======================
    MDX Components
    ======================= */
 
-.mdx-h1 {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .mdx-h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 2.5rem 0 1.5rem;
     color: var(--text-primary);
     line-height: 1.2;
-}
+  }
 
-.mdx-h2 {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .mdx-h2 {
     font-size: 2rem;
     font-weight: 700;
     margin: 2rem 0 1rem;
     color: var(--text-primary);
     line-height: 1.3;
-}
+  }
 
-.mdx-h3 {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .mdx-h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 1.5rem 0 0.75rem;
     color: var(--text-primary);
     line-height: 1.4;
-}
+  }
 
-.mdx-p {
+  .mdx-p {
     margin: 1.25rem 0;
     color: var(--text-secondary);
     line-height: 1.8;
-}
+  }
 
-.mdx-link {
+  .mdx-link {
     color: var(--accent-primary);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
-}
+  }
 
-.mdx-link:hover {
+  .mdx-link:hover {
     border-bottom-color: var(--accent-primary);
-}
+  }
 
-.mdx-ul,
-.mdx-ol {
+  .mdx-ul,
+  .mdx-ol {
     margin: 1.25rem 0;
     padding-left: 1.5rem;
-}
+  }
 
-.mdx-li {
+  .mdx-li {
     margin: 0.5rem 0;
     color: var(--text-secondary);
     line-height: 1.7;
-}
+  }
 
-.mdx-code-inline {
+  .mdx-code-inline {
     background: var(--code-bg);
     border: 1px solid var(--code-border);
     padding: 0.2rem 0.5rem;
@@ -403,9 +363,9 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.875em;
     color: var(--accent-primary);
-}
+  }
 
-.mdx-pre {
+  .mdx-pre {
     background: var(--code-bg);
     border: 1px solid var(--code-border);
     border-radius: 8px;
@@ -413,49 +373,47 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     overflow-x: auto;
     margin: 1.5rem 0;
     box-shadow: var(--shadow-sm);
-}
+  }
 
-.mdx-pre code {
+  .mdx-pre code {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.875rem;
     line-height: 1.6;
-}
+  }
 
-.mdx-blockquote {
+  .mdx-blockquote {
     border-left: 4px solid var(--accent-primary);
     padding-left: 1.5rem;
     margin: 1.5rem 0;
     font-style: italic;
     color: var(--text-secondary);
-}
+  }
 
-.mdx-image-wrapper {
+  .mdx-image-wrapper {
     display: block;
     margin: 2rem 0;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--shadow-md);
-}
+  }
 
-.mdx-image {
+  .mdx-image {
     width: 100%;
     height: auto;
     display: block;
-}
+  }
 
-/* =======================
+  /* =======================
    About & 404 Pages
    ======================= */
 
-.page-section {
+  .page-section {
     max-width: 800px;
     margin: 0 auto;
     padding: 3rem 0;
-}
+  }
 
-.page-title {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .page-title {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
@@ -463,23 +421,21 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
+  }
 
-.page-text {
+  .page-text {
     color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 1.25rem;
     font-size: 1.125rem;
-}
+  }
 
-.error-container {
+  .error-container {
     text-align: center;
     padding: 5rem 1rem;
-}
+  }
 
-.error-code {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  .error-code {
     font-size: 8rem;
     font-weight: 800;
     background: var(--accent-gradient);
@@ -488,15 +444,15 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     background-clip: text;
     line-height: 1;
     margin-bottom: 1rem;
-}
+  }
 
-.error-message {
+  .error-message {
     font-size: 1.5rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
-}
+  }
 
-.button-primary {
+  .button-primary {
     display: inline-block;
     background: var(--accent-gradient);
     color: white;
@@ -506,21 +462,19 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
     font-weight: 600;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: var(--shadow-md);
-}
+  }
 
-.button-primary:hover {
+  .button-primary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
-}
+  }
 
-/* =======================
+  /* =======================
    Responsive Design
    ======================= */
 
-@media (max-width: 768px) {
-.hero-title {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+  @media (max-width: 768px) {
+    .hero-title {
       font-size: 2.5rem;
     }
 
@@ -533,33 +487,23 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
       gap: 1.5rem;
     }
 
-.post-title {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+    .post-title {
       font-size: 2rem;
     }
 
-.mdx-h1 {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+    .mdx-h1 {
       font-size: 2rem;
     }
 
-.mdx-h2 {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+    .mdx-h2 {
       font-size: 1.5rem;
     }
 
-.mdx-h3 {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+    .mdx-h3 {
       font-size: 1.25rem;
     }
 
-.error-code {
-  font-family: 'Biondeggiare', 'Inter', sans-serif;
-font-family: 'Biondeggiare', 'Inter', sans-serif;
+    .error-code {
       font-size: 5rem;
     }
 
@@ -571,34 +515,377 @@ font-family: 'Biondeggiare', 'Inter', sans-serif;
       flex-direction: column;
       text-align: center;
     }
-}
+  }
 
-/* =======================
+  /* =======================
    Syntax Highlighting
    ======================= */
 
-.hljs {
+  .hljs {
     background: var(--code-bg) !important;
     color: var(--text-primary);
-}
+  }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-title {
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-title {
     color: var(--accent-primary);
-}
+  }
 
-.hljs-string,
-.hljs-attr {
+  .hljs-string,
+  .hljs-attr {
     color: #10b981;
-}
+  }
 
-.hljs-comment {
+  .hljs-comment {
     color: var(--text-tertiary);
     font-style: italic;
+  }
+
+  .hljs-number,
+  .hljs-literal {
+    color: #f59e0b;
+  }
+
+/* =======================
+   Font Showcase Pages - Additional Font Face Declarations
+   ======================= */
+
+@font-face {
+  font-family: 'Affigere';
+  src: url('/fonts/Affigere-Regular.woff2') format('woff2'),
+    url('/fonts/Affigere-Regular.woff') format('woff'),
+    url('/fonts/Affigere-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-.hljs-number,
-.hljs-literal {
-    color: #f59e0b;
+@font-face {
+  font-family: 'Americaine';
+  src: url('/fonts/Americaine-Condensed.woff2') format('woff2'),
+    url('/fonts/Americaine-Condensed.woff') format('woff'),
+    url('/fonts/Americaine-Condensed.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Excessive';
+  src: url('/fonts/Excessive-ExtraCondensed.woff2') format('woff2'),
+    url('/fonts/Excessive-ExtraCondensed.woff') format('woff'),
+    url('/fonts/Excessive-ExtraCondensed.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GravePresse';
+  src: url('/fonts/GravePresse-ExtraBold.woff2') format('woff2'),
+    url('/fonts/GravePresse-ExtraBold.woff') format('woff'),
+    url('/fonts/GravePresse-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NouvelleGrotesquerie';
+  src: url('/fonts/NouvelleGrotesquerie-Regular.woff2') format('woff2'),
+    url('/fonts/NouvelleGrotesquerie-Regular.woff') format('woff'),
+    url('/fonts/NouvelleGrotesquerie-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rosette';
+  src: url('/fonts/Rosette-Regular.woff2') format('woff2'),
+    url('/fonts/Rosette-Regular.woff') format('woff'),
+    url('/fonts/Rosette-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Squatina';
+  src: url('/fonts/Squatina-Regular.woff2') format('woff2'),
+    url('/fonts/Squatina-Regular.woff') format('woff'),
+    url('/fonts/Squatina-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ThestralNeue';
+  src: url('/fonts/ThestralNeue-Bold.woff2') format('woff2'),
+    url('/fonts/ThestralNeue-Bold.woff') format('woff'),
+    url('/fonts/ThestralNeue-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =======================
+   Font Showcase Styles
+   ======================= */
+
+.fonts-hero {
+    text-align: center;
+    padding: 4rem 0 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fonts-hero-title {
+    font-family: 'Biondeggiare', 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.fonts-hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.fonts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.font-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.font-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-gradient);
+    transform: scaleX(0);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.font-card:hover {
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-primary);
+    transform: translateY(-8px);
+}
+
+.font-card:hover::before {
+    transform: scaleX(1);
+}
+
+.font-card-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.font-card-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.font-card-preview {
+    padding: 1.5rem;
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.font-card:hover .font-card-preview {
+    background: var(--bg-primary);
+    border-color: var(--accent-primary);
+}
+
+.font-card-preview-text {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.font-card-link-text {
+    color: var(--accent-primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.font-card-link-text::after {
+    content: '';
+    transition: transform 0.3s ease;
+}
+
+.font-card:hover .font-card-link-text::after {
+    transform: translateX(4px);
+}
+
+/* Font Detail Page */
+
+.font-detail-hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+
+.font-detail-name {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+}
+
+.font-detail-description {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    color: var(--text-tertiary);
+}
+
+.font-samples-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.font-sample-section {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.font-sample-section:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-primary);
+}
+
+.font-sample-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--bg-tertiary);
+    border-radius: 6px;
+}
+
+.font-sample-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    word-break: break-word;
+}
+
+.font-sample-paragraph {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Responsive Design for Font Pages */
+
+@media (max-width: 768px) {
+    .fonts-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .fonts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .font-card-name {
+        font-size: 2rem;
+    }
+
+    .font-detail-name {
+        font-size: 3rem;
+    }
+
+    .font-sample-title {
+        font-size: 2.5rem;
+    }
+
+    .font-sample-paragraph {
+        font-size: 1.125rem;
+    }
+
+    .font-sample-section {
+        padding: 1.5rem;
+    }
 }
