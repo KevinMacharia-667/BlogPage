@@ -26,7 +26,7 @@ export function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        Kevin's Blog
+                        Kevin&apos;s Blog
                     </motion.span>
                 </Link>
 

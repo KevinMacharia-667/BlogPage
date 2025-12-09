@@ -7,7 +7,7 @@ export function Footer() {
         <footer className="footer">
             <div className="footer-container">
                 <p className="footer-text">
-                    © {currentYear} Kevin's Blog. All rights reserved.
+                    © {currentYear} Kevin&apos;s Blog. All rights reserved.
                 </p>
                 <div className="footer-links">
                     <a
