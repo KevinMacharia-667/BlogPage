@@ -8,9 +8,12 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: 'My Blog - Web Development & Technology',
+    title: 'Kevin\'s Blog - Web Development & Technology',
     description: 'A modern blog about web development, technology, and programming',
     keywords: ['blog', 'web development', 'technology', 'programming', 'Next.js'],
+    icons: {
+        icon: '/favicon.png',
+    },
 }
 
 export default function RootLayout({

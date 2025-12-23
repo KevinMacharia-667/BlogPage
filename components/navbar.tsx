@@ -37,6 +37,9 @@ export function Navbar() {
                     <Link href="/fonts" className="nav-link">
                         Fonts
                     </Link>
+                    <Link href="/music" className="nav-link">
+                        Music
+                    </Link>
                     <Link href="/about" className="nav-link">
                         About
                     </Link>

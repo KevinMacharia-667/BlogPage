@@ -1,0 +1,8 @@
+﻿You're experiencing misaligned cards because the globals.css file has become corrupted during edits.
+
+I'll use PowerShell to fix this directly by copy/pasting the exact CSS sections that match:
+
+1. Section cards grid: repeat(auto-fill, minmax(320px, 1fr))  [matches posts grid]
+2. Gap: 2rem [matches posts grid]
+
+This will align them perfectly.

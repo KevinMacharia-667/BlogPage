@@ -1,0 +1,170 @@
+/* =======================
+   Font Face Declarations
+   ======================= */
+
+@font-face {
+    font-family: 'Biondeggiare';
+    src: url('/fonts/Biondeggiare-Regular.woff2') format('woff2'),
+        url('/fonts/Biondeggiare-Regular.woff') format('woff'),
+        url('/fonts/Biondeggiare-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Affigere';
+    src: url('/fonts/Affigere-Regular.woff2') format('woff2'),
+        url('/fonts/Affigere-Regular.woff') format('woff'),
+        url('/fonts/Affigere-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Americaine';
+    src: url('/fonts/Americaine-Condensed.woff2') format('woff2'),
+        url('/fonts/Americaine-Condensed.woff') format('woff'),
+        url('/fonts/Americaine-Condensed.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Excessive';
+    src: url('/fonts/Excessive-ExtraCondensed.woff2') format('woff2'),
+        url('/fonts/Excessive-ExtraCondensed.woff') format('woff'),
+        url('/fonts/Excessive-ExtraCondensed.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GravePresse';
+    src: url('/fonts/GravePresse-ExtraBold.woff2') format('woff2'),
+        url('/fonts/GravePresse-ExtraBold.woff') format('woff'),
+        url('/fonts/GravePresse-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NouvelleGrotesquerie';
+    src: url('/fonts/NouvelleGrotesquerie-Regular.woff2') format('woff2'),
+        url('/fonts/Nouvelle Grotesquerie-Regular.woff') format('woff'),
+        url('/fonts/NouvelleGrotesquerie-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosette';
+    src: url('/fonts/Rosette-Regular.woff2') format('woff2'),
+        url('/fonts/Rosette-Regular.woff') format('woff'),
+        url('/fonts/Rosette-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Squatina';
+    src: url('/fonts/Squatina-Regular.woff2') format('woff2'),
+        url('/fonts/Squatina-Regular.woff') format('woff'),
+        url('/fonts/Squatina-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ThestralNeue';
+    src: url('/fonts/ThestralNeue-Bold.woff2') format('woff2'),
+        url('/fonts/ThestralNeue-Bold.woff') format('woff'),
+        url('/fonts/ThestralNeue-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =======================
+   Music Section
+   ======================= */
+
+.music-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    font-family: 'Squatina', 'Inter', sans-serif;
+}
+
+.music-title {
+    font-family: 'Squatina', 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.music-subtitle {
+    font-family: 'Squatina', 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.music-text {
+    font-family: 'Squatina', 'Inter', sans-serif;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.music-list {
+    font-family: 'Squatina', 'Inter', sans-serif;
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    list-style: disc;
+}
+
+.music-list-item {
+    font-family: 'Squatina', 'Inter', sans-serif;
+    margin: 0.75rem 0;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    transition: color 0.2s ease;
+}
+
+.music-list-item:hover {
+    color: var(--accent-primary);
+}
+
+/* Responsive for Music Section */
+@media (max-width: 768px) {
+    .music-title {
+        font-size: 2.5rem;
+    }
+
+    .music-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .music-text,
+    .music-list-item {
+        font-size: 1rem;
+    }
+}
